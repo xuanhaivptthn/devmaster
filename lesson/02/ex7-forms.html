@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="user">Username</label>
+        <input type="text" name="user" id="user" placeholder="abcd1234">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="1234@abcd">
+        <br>
+        <input type="checkbox" name="SoThich" id="BongDa">
+        <label for="BongDa">Bóng đá</label>
+        <input type="checkbox" name="SoThich" id="CauLong">
+        <label for="CauLong">Cầu lông</label>
+        <input type="checkbox" name="SoThich" id="NgheNhac">
+        <label for="NgheNhac">Nghe nhạc</label>
+        <br>
+        <input type="radio" name="GioiTinh" id="Nam">
+        <label for="Nam">Nam</label>
+        <input type="radio" name="GioiTinh" id="Nu">
+        <label for="Nữ">Nam</label>
+        <br>
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar">
+        <br>
+        <label for="mausac">Chọn màu</label>
+        <input type="color" name="mausac" id="mausac">
+        <br>
+        <label for="datetime-local">Date/Time</label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br>
+        <label for="month">Tháng</label>
+        <input type="month" name="month" id="month">
+        <label for="week">Tuần</label>
+        <input type="week" name="week" id="week">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com">
+        <br>
+        <label for="number">Số</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="0" max="100" value="90">
+        <br>
+        <select name="luachon" id="luachon">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="yes">Yes</option>
+            <option value="no">no</option>
+        </select>
+        <hr>
+        <input type="reset" name="reset" id="reset">
+        <br>
+        <input type="button" name="button" id="button" value="Gửi (Button)">
+        <button>Gửi</button>
+        <input type="submit" name="submit" id="submit" value="Gửi (Submit)">
+    </form>
+</body>
+</html>
