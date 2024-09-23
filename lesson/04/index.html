@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các cách sử dụng CSS</title>
+    <style>
+        /* tương tự tên thẻ */
+        h3 {
+            color: blue;
+        }
+        h2 {
+            color: aqua;
+        }
+
+        /* tương tự id của thẻ */
+        #css-in-file {
+            background-color: bisque;
+        }
+
+        /* tương tự tên class của thẻ */
+        .bg-blue {
+            background-color: rgb(81,81,246);
+        }
+
+        /* tương tự tên thuộc tính */
+        [type="text"] {
+            border: 6px solid;
+        }
+        input {
+            border: 3px solid red;
+        }
+    </style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 3 cách sử dụng CSS -->
+    <h2 style="color: red;">CSS trực tiếp trên thẻ HTML</h2>
+
+    <h3 id="css-in-file">CSS trong file HTML</h3>
+
+    <div>
+        <h3 class="bg-blue">CSS ngoài file HTML - Link đến file CSS</h3>
+        <p class="bg-blue">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae, autem beatae distinctio voluptatum, cupiditate dolorem vitae iure id libero voluptatibus? Quidem alias cupiditate aliquid, in repudiandae optio debitis ab?
+        </p>
+    </div>
+
+    <form action="">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+    </form>
+    <br>
+    <a href="#">test</a>
+</body>
+</html>

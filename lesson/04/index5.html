@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Menu</title>
+    <style>
+        nav {
+            background-color: #ccc;
+        }
+
+        ul {
+            padding: 0%;
+        }
+
+        ul li {
+            position: relative;
+            /* bỏ thuộc tính list */
+            list-style: none;
+            /* display: flex; */
+            padding: 0.5rem;
+        }
+        
+        a {
+            /* bỏ gạch dưới */
+            text-decoration: none;
+
+            color: black;
+            opacity: 80%;
+
+            /* 
+            padding: 0.5rem; Trên dưới trái phải
+            padding: 0.5rem 0.5rem; trên dưới trái phải
+            padding: 0.5rem 0.5rem 0.5rem; trên; trái phải; dưới
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem; trên; dưới; trái; phải
+            */
+            padding: 0.5rem;
+        }
+        #menu-1>li+li::before {
+            content: "";
+            height: 100%;
+            width: 2px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        #menu-1 {
+            display: flex;
+        }
+
+        #menu-1>li:hover #menu-2 {
+            display: block;
+        }
+        #menu-2 {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 250px;
+            background-color: #ccc;
+            border: solid 1px;
+            border-top: none;
+
+            /* border-bottom: solid 1px;
+            border-right: solid 1px;
+            border-left: solid 1px; */
+
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        ul li:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id="menu-1">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Khóa học</a>
+                <ul id="menu-2">
+                    <li><a href="#">Lập trình web PHP & MySQL</a></li>
+                    <li><a href="#">Lập trình web với NetCore</a></li>
+                    <li><a href="#">Lập trình web với SpringBoot</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

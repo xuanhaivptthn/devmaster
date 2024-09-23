@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- tag01 tag02 - css cho giá trị có tag02 trong tag01 -->
+    <style>
+        section div {
+            background-color: aqua;
+        }
+        section p {
+            color: red;
+        }
+
+    /* tag01, tag02 - css cho cả tag01 và tag02*/ 
+        h2,h3 {
+            color: rgb(27,7,174);
+            background-color: blanchedalmond;
+        }
+    /* tag01+tag02 */
+    h3+div {
+        background-color: cadetblue;
+    }
+    
+    div+div {
+        border: solid #ddd 4px;
+    }
+
+    /* Tag01>Tag02 - css cho các thành phần tag02 là con của tag01 */
+    section>h3 {
+        border: solid red 4px;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Tag01 Tag02</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima error officiis quis dolorum corporis veritatis, veniam deleniti ipsam debitis quos. Fuga recusandae hic ut quasi cumque necessitatibus, voluptatem sunt?
+            </p>
+        </div>
+    </section>
+    <div>
+        Tag01,Tag02
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum repellendus quos eius molestiae veniam, ea aliquam at ipsum, temporibus vel quaerat, reiciendis quisquam tempora laborum recusandae magni molestias officia?
+        </p>
+    </div>
+
+    <div>
+        <h3>Tag01+Tag02</h3>
+        <div>Tag01+Tag02</div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid nesciunt doloremque minima, autem incidunt cum natus architecto, veniam obcaecati accusamus, beatae corrupti qui non delectus impedit eos consequatur rerum illo.
+        </div>
+    </div>
+
+    <section>
+        <h3>Tag01>Tag02</h3>
+        <div>
+            <h3>
+                Nội dung tag01>tag02
+            </h3>
+        </div>
+    </section>
+</body>
+</html>
