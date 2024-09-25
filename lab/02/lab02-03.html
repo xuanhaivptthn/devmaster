@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02-03</title>
+</head>
+<body>
+    <form action method="post">
+        <table width="75%">
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" name="hoten" id="hoten"></td>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập</td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Ảnh đại diện</td>
+                <td><input type="file" name="avatar" id="avatar"></td>
+            </tr>
+            <tr>
+                <td>Thư điện tử</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="nam" id="nam">
+                    <label for="nam">Nam</label>
+                    <input type="radio" name="nu" id="nu">
+                    <label for="nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" name="bongda" id="bongda">
+                    <label for="bongda">Bóng đá</label>
+                    
+                    <input type="checkbox" name="xemphim" id="xemphim">
+                    <label for="bongda">Xem phim</label>
+                    
+                    <input type="checkbox" name="dulich" id="dulich">
+                    <label for="bongda">Du lịch</label>
+                    
+                    <input type="checkbox" name="boi" id="boi">
+                    <label for="bongda">Bơi</label>
+                    
+                    <input type="checkbox" name="nghenhac" id="nghenhac">
+                    <label for="bongda">Nghe nhạc</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Quê quán</td>
+                <td>
+                    <select name="quequan" id="quequan">
+                        <option value="Hanoi">Ha Noi</option>
+                        <option value="Haiphong">Hai Phong</option>
+                        <option value="Namdinh">Nam Dinh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" name="diachi" id="diachi"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="tel" name="dienthoai" id="dienthoai"></td>
+            </tr>
+            <tr>
+                <td>Mô tả ngắn</td>
+                <td><textarea name="desc" id="desc">...</textarea></td>
+            </tr>
+        </table>
+    </form>
+
+    <input type="button" name="send" id="Send" value="Đăng ký">
+    <input type="reset" name="reset" id="reset" value="Làm lại">
+</body>
+</html>
