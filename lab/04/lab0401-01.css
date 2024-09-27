@@ -1,0 +1,17 @@
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+    padding: 0.5rem;
+}
+#menu-1 {
+    display: flex;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+#menu-2 {
+    display: none;
+}

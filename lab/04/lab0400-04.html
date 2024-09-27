@@ -5,37 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab04-04</title>
     <style>
-        header {
-            text-align: center;
-            border: solid 1px green;
-            margin: 5px;
-        }
-        nav {
-            text-align: center;
+        td {
             border: 1px solid green;
-            margin: 5px;
-        }
-        footer {
             text-align: center;
-            border: 1px solid green;
-            margin: 5px;
         }
-        #left {
-            text-align: center;
-            display: block;
 
-        }
     </style>
 </head>
 <body>
-    <header>Header</header>
-    <nav>Nav</nav>
-    <section>
-        <div id="left">Left</div>
-        <div id="body">Body</div>
-        <div id="right">Right</div>
-    </section>
-    <footer>Footer</footer>
-
+    <table>
+        <tr id="head">
+            <td colspan="3">Header</td>
+        </tr>
+        <tr id="nav">
+            <td colspan="3">Nav</td>
+        </tr>
+        <tr id="bod">
+            <td id="left">Left</td>
+            <td id="mid">Body</td>
+            <td id="Right">Right</td>
+        </tr>
+        <tr id="foot">
+            <td colspan="3">Footer</td>
+        </tr>
+    </table>
 </body>
 </html>
