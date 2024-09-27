@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    /* border: 100px solid black; */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.w-100 {
+    width: 100%;
+}
+
+#header-top {
+    display: flex;
+    background-color: lightgray;
+    
+}
+
+#header-top>.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-top a {
+    color: black;
+    font-weight: bold;
+}
+
+#header-top-left,
+#header-top .header-top-icon {
+    padding: 0.4rem 0.8rem;
+}
+
+#header-top-left span i {
+    color: red;
+}
+
+#header-top .header-top-icon {
+    border-left: solid black 1px;
+}
+#header-top>.container:last-child {
+    border-right: solid black 1px;
+}
+
+/* Header Mid */
+#search
+, #header-mid .header-mid-logo,
+#header-mid .header-mid-content {
+    align-content: center;
+}
+
+#search input {
+    padding: 0.5rem;
+    width: 20rem;
+}
+#search button {
+    padding: 0.5rem;
+    margin: -0.5rem;
+}
+#header-mid img{
+    object-fit: cover;
+}
+
+#header-mid .header-mid-content {
+    text-transform: uppercase;
+    width: 200px;
+    margin-left: 1rem;
+}
+
+/* Header Bottom */
+
+#header-bottom {
+    background-color: greenyellow;
+    padding: 0.5rem;
+}
+
+#header-bottom #menu-1>li>a {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#header-bottom #menu-1>li {
+    position: relative;
+}
+
+#header-bottom #menu-1>li:hover {
+    background-color: red;
+}
+
+#header-bottom #menu-1>li:hover>ul {
+    display: block;
+}
+
+#header-bottom #menu-1>li>ul {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background-color: lightgray;
+    width: 100%;
+    display: none;
+}
+
+
+#header-bottom img {
+    padding-right: 0.5rem;
+}
+
+#header-bottom #menu-1>li>ul>li {
+    padding: 0.6rem;
+    border: #ccc 1px solid;
+    border-top: none;
+}
+
+#header-bottom #menu-1>li>ul a {
+    color: black;
+    
+}
+

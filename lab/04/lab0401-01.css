@@ -1,5 +1,14 @@
+nav {
+    background-color: black;
+}
 ul{
+    padding: 0%;
+}
+
+ul li {
+    position: relative;
     list-style: none;
+    padding: 0.5rem;
 }
 a {
     text-decoration: none;
@@ -8,10 +17,13 @@ a {
 }
 #menu-1 {
     display: flex;
-    background-color: black;
     padding: 0.5rem;
 }
 
 #menu-2 {
     display: none;
+}
+
+ul li:hover {
+    color: lightgreen;
 }
