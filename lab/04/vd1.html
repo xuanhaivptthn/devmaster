@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VD1</title>
+    <style type="text/css">
+        /* vd1 */
+        h1 {
+            font-size: x-large;
+            color: red;
+        }
+        h2 {
+            font-size: large;
+            color: blue;
+        }
+        /* vd2 */
+        h1.pastoral {
+            color: #00ff00;
+        }
+        .abc {
+            background-color: #ff00ff;
+        }
+
+        /* vd3  */
+
+        ul {
+            list-style: outside;
+        }
+
+        ul.compact {
+            list-style: inside;
+        }
+        /* vd4  */
+        p.vd4 {
+            font-size: 12px;
+            line-height: 12pt;
+        }
+        p.vd4::first-letter {
+            font-size: 200%;
+            float: left;
+        }
+        span {
+            text-transform: uppercase;
+        }
+        /* vd6 */
+
+        #mauvang {
+            width: 300px;
+            height: 100px;
+            border: 10px solid yellow;
+        }
+        #mauden {
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+        }
+        #hopmaudo {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi</h1>
+    <h2>Hello</h2>
+    <hr>
+    <h1 class="pastoral">Way too green</h1>
+    <p class="abc">SELECTOR Lớp</p>
+    <hr>
+    <ul>
+        <li>first list item comes first</li>
+        <li>second list item comes second</li>
+    </ul>
+    <ul class="compact">
+        <li>first list item comes first</li>
+        <li>second list item comes second</li>
+    </ul>
+    <hr>
+    <p class="vd4"><span>The first</span> few words of an article in The Economist.</p>
+    <hr>
+    <p style="color: blue; font-family: 'Arial Black', serif;">This paragraph is styled in blue with the Arial black font, if available.</p>
+    <p style="color: red; font-family: 'Comic Sans MS', serif;">This paragraph is styled in red with the Comic Sans MS Font, if available.</p>
+    <hr>
+    <div id="mauvang"></div>
+    <div id="mauden">
+        <div id="hopmaudo"></div>
+    </div>
+</body>
+</html>
