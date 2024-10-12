@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+</head>
+<body>
+    <script>
+        // Object
+        // Syntax
+        var obj = new Object();
+        var obj2 = {}; 
+
+        obj2 = {
+            id: 0,
+            name: "z",
+            age: 20
+        }
+
+        var obj3 = new Object({
+            id: 1,
+            name: "a",
+            age: 0
+        });
+
+        function tinhNam(age) {
+            return document.getDate() - age;
+        }
+
+        var obj4 = {
+            id: 2,
+            name: "b",
+            age: 3,
+            namSinh: function() {
+                return 3
+            }
+        }
+        console.log(obj);
+        console.log(obj2);
+        console.log(obj3);
+        console.log(obj4);
+
+        console.log(obj4.namSinh());
+
+        // Thao tác với Object
+        // Syntax: tên_obj.tên_thuộc_tính hoặc tên_obj.tên_đối.tượng()
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+    <style>
+        #mail-error {
+            display: none
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email">
+            <div class="mail-error">
+                Kiểm tra địa chỉ Email
+            </div>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit">
+        </div>
+    </form>
+
+    <script>
+        function checkEmail() {
+            var regx = '/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/';
+            console.log('email').value;
+            if (regx.test(document.getElementById('email').value)) {
+                document.getElementById('mail-error').display = "block";
+            } else {
+                document.getElementById('mail-error').display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

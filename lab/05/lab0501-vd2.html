@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Độ tuổi chịu trách nhiệm hình sự</title>
+    <script>
+        function ageCheck() {
+            if (form.age.value < 18) {
+                document.writeln("<p><h4><i>You are not eligible </i></h4></p>"+form.name.value);
+            }
+            else
+            {
+                document.writeln("<h4><i>You are eligible</i></h4>"+form.name.value);
+            }
+        }
+
+        function loseFocus() {
+            if (form.name.value == "") {
+                alert("Name field must not be empty.");
+                form.name.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="form">
+        <p><h5><i>Enter name:</i></h5>
+
+        <input name="name" type="text" size="35"></p>
+
+        <p><h5><i>Enter age:</i></h5>
+        <input name="age" type="text" size="5"></p>
+
+        <input type="button" value="Check" onclick="ageCheck()">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

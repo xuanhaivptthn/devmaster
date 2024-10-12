@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các cách tương tác với thẻ HTML bằng JS</title>
+</head>
+<body>
+
+    <h1>JS tương tác với thẻ HTML qua tên thẻ</h1>
+    <p class="class-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam saepe dolores sint quam magni ex, ea illum modi accusantium provident assumenda dicta repellat velit quas vel veniam. Magni, facilis.</p>
+
+    <div class="class-p">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, sunt labore commodi quae minima fuga quidem soluta nihil perspiciatis fugit quas vel, natus excepturi voluptatibus doloribus aliquid nemo veniam reprehenderit?</div>
+    </div>
+
+    <script>
+        // Cách 1: JS trương tác qua tên thẻ HTML
+        var element1 = document.getElementsByTagName("h1");
+        element1[0].style.color = "blue";
+
+        // Cách 2: JS tương tác với HTML qua ID của thẻ
+        document.getElementById('idName').style.color = "blue";
+
+        //Cách 3: JS tương tác với HTML qua Class của thẻ HTML
+        document.getElementsByClassName('className')[0].style.color = "#ccc";
+
+        //Cách 4: JS tương tác với HTML qua cú pháp CSS Selector của thẻ HTML
+        // document.querySelectorAll("div .class-p")[0].style.background-color = "red";
+    </script>
+</body>
+</html>
