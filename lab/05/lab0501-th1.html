@@ -38,12 +38,22 @@
         }
 
         function checkUsr() {
-            if (document.getElementById(username).value.length)
+            var usr = document.getElementById("username").value;
+            if (usr.length < 8) {
+                document.getElementById("usr-error").style.display = "block";
+            }
+            else {
+                document.getElementById("usr-error").style.display = "none";
+            }
         }
 
         function checkPwd() {
-            if (document.getElementById(password).value == "") {
-
+            var pwd = document.getElementById("password").value;
+            if (pwd.length < 8) {
+                document.getElementById("pwd-error").style.display = "block";
+            }
+            else {
+                document.getElementById("pwd-error").style.display = "none";
             }
         }
 
