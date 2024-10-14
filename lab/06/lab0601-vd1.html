@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab0601-VD1</title>
+    <script>
+        function checkLoginCreds() {
+            var usr = document.getElementById("username");
+            var pwd = document.getElementById("password");
+            if (usr.value == "") {
+                alert("Tên đăng nhập không được bỏ trống");
+                username.focus();
+            }
+            else if (pwd.value == "") {
+                alert("Mật khẩu không được bỏ trống");
+                password.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <table width="350">
+            <caption>
+                <h2>Login</h2>
+            </caption>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <!-- <label for="username">Username</label> -->
+                    <input type="text" name="username" id="username" placeholder="Tên đăng nhập">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <!-- <label for="password">Password</label> -->
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" name="login" id="login" value="Login" onclick="checkLoginCreds()">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
