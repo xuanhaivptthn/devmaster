@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab0501-TH1</title>
-    <script>
-
-    </script>
-</head>
+    <style>
+        .error {
+            display: none;
+            color: red;
+        }
+    </style>
 <body>
     <div>
     <label for="username">Username</label>
-    <input type="username" name="username" id="username">
+    <input type="username" name="username" id="username" onkeypress="checkUsr()">
+        <div id="usr-error" class="error">
+            Kiểm tra lại tên đăng nhập`
+        </div>
     <br>
     <label for="password">Password</label>
-    <input type="password" name="password" id="password">
+    <input type="password" name="password" id="password" onkeypress="checkPwd()">
+        <div id="pwd-error" class="error">
+            Kiểm tra lại mật khẩu
+        </div>
     <br>
     <label for="remember">Remember Set</label>
     <input type="checkbox" name="remember" id="remember">
@@ -23,6 +31,24 @@
     <input type="button" name="login-btn" id="login-btn" value="Login">
 
     <input type="reset" name="reset-btn" id="reset-btn" value="Reset" >
+
+    <script>
+        function checkCreds() {
+
+        }
+
+        function checkUsr() {
+            if (document.getElementById(username).value.length)
+        }
+
+        function checkPwd() {
+            if (document.getElementById(password).value == "") {
+
+            }
+        }
+
+        
+    </script>
 </div>
 </body>
 </html>

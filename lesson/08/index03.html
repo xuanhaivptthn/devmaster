@@ -6,16 +6,17 @@
     <title>Regular Expression</title>
     <style>
         #mail-error {
-            display: none
+            display: none;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <form action="post">
+    <form action="">
         <div>
-            <label for="email">email</label>
-            <input type="text" name="email" id="email">
-            <div class="mail-error">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" onkeypress="checkEmail()">
+            <div id="mail-error">
                 Kiểm tra địa chỉ Email
             </div>
         </div>
@@ -30,12 +31,15 @@
 
     <script>
         function checkEmail() {
-            var regx = '/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/';
-            console.log('email').value;
-            if (regx.test(document.getElementById('email').value)) {
-                document.getElementById('mail-error').display = "block";
-            } else {
-                document.getElementById('mail-error').display = "none";
+            var regx =/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            var mail = document.getElementById('email').value;
+            if (regx.test(mail)) {
+                console.log("none");
+                document.getElementById("mail-error").style.display = "none";
+            }
+            else {
+                console.log("deny");
+                document.getElementById("mail-error").style.display = "block";
             }
         }
     </script>
