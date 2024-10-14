@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab0502-VD2</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("Nhập a");
+        var b = prompt("Nhập b");
+        var c = prompt("Nhập c");
+
+        function ptb1(b, c) {
+            if (b == 0) {
+                if (c == 0) {
+                    document.write("Vô số nghiệm");
+                }
+                else {
+                    document.write("Vô nghiệm");
+                }
+            }
+            else {
+                x = -b / c;
+                document.write("Phương trình có nghiệm: ", x);
+            }
+        }
+
+        function ptb2(a, b, c) {
+            if (a + b + c == 0) {
+                x1 = 1;
+                x2 = c / a;
+                document.write("Nghiệm x1 = ", x1, "<br>");
+                document.write("Nghiệm x2 = ", x2, "<br>");
+            } else
+                if (a - b + c == 0) {
+                    x1 = -1;
+                    x2 = -c / a;
+                    document.write("Nghiệm x1 = ", x1, "<br>");
+                    document.write("Nghiệm x2 = ", x2, "<br>");
+                }
+                else {
+                    delta = b * b - 4 * a * c;
+                    if (delta < 0) {
+                        document.write("Phương trình vô nghiệm");
+                    }
+                    else if (delta == 0) {
+                        x = -b / (2 * a);
+                        document.write("Phương trình có nghiệm kép x1 = x2 = ", x);
+                    }
+                    else {
+                        x1 = (-b + Math.sqrt(delta)) / (a * 2);
+                        x2 = (-b - Math.sqrt(delta)) / (a * 2);
+                        document.write("Nghiệm x1 = ", x1, "<br>");
+                        document.write("Nghiệm x2 = ", x2, "<br>");
+                    }
+                }
+        }
+        if (a == 0) {
+            ptb1(b, c);
+        }
+        else {
+            ptb2(a, b, c);
+        }
+    </script>
+</body>
+
+</html>

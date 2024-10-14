@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab0502-VD3</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Nhập x");
+
+        // Đếm số chẵn, tính tổng
+        var demChan = 0;
+        var tongChan = 0;
+        for (i = 1; i <= x; i++) {
+            if (i % 2 == 0) {
+                tongChan += i;
+                demChan++;
+            }
+        }
+        // Đếm số lẻ, tính tổng
+        var demLe = 0;
+        var tongLe = 0;
+        for (i = 1; i <= x; i++) {
+            if (i % 2 != 0) {
+                tongLe += i;
+                demLe++;
+            }
+        }
+        
+        document.write("Số các số chẵn: ",demChan,"<br>");
+        document.write("Tổng các số chẵn: ",tongChan,"<br>");
+        document.write("Số các số lẻ: ",demLe,"<br>");
+        document.write("Tổng các số lẻ: ",tongLe,"<br>");
+    </script>
+</body>
+</html>
