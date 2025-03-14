@@ -18,8 +18,10 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
     @Autowired
     private UserRepository userRepository;
+
     @GetMapping
     public String listUsers(Model model) {
         List<User> users = userService.getAllUsers();
