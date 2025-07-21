@@ -7,7 +7,6 @@ interface StudentListProps {
 }
 
 export default function StudentList({ students }: StudentListProps) {
-    
     const elementStudent = students.map((student, index) => {
         return <Student student={student} key = {index} />
     })
