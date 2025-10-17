@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="lab07-th2.css">
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(e) {
+                col = e.target.id;
+                $("content").addClass(col);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h1>Chọn màu chữ</h1>
+        <ul>
+            <li><a href="javascript:void(0)" id="red-bg">Đỏ</a></li>
+            <li><a href="javascript:void(0)" id="blue-bg">Xanh</a></li>
+            <li><a href="javascript:void(0)" id="yellow-bg">Vàng</a></li>
+            <li><a href="javascript:void(0)" id="gray-bg">Ghi</a></li>
+            <li><a href="javascript:void(0)" id="violet-bg">Tím</a></li>
+        </ul>
+        <div id="content" class="clearfix">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis praesentium unde nobis quis in voluptates sunt veritatis ipsam sit expedita a, repellat similique facilis dolorem provident error dicta corrupti omnis?
+        </div>
+    </div>
+</body>
+</html>
